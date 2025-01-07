@@ -1,0 +1,138 @@
+--- 
+--- 
+@import "{{ site.theme }}";
+@import "proxima-nova.css";
+
+
+// Make custom Font
+body {
+    font-family: 'proxima-nova', sans-serif;
+}
+
+@media (max-width: 1100px) {
+    .arrow, .arrow-desc {
+        display: none;
+    }
+}
+
+.post-title{
+    font-weight: 700;
+}
+
+.profile-pic{
+    display: box;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: -200;
+    object-fit: cover;
+    object-position: 80% 90%;
+}
+
+// Footer Modifications
+.site-footer {
+    text-align: center;        
+    display: flex;            
+    align-items: center;
+}
+
+.footer-col {
+    margin-bottom: -15px;
+}
+
+.footer-col-wrapper {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.footer-text{
+    font-size: 14px;
+
+}
+
+.trigger{
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    margin: 0;
+}
+
+.site-title, .page-link{
+    font-size: 20px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    letter-spacing: -1px;
+    line-height: 54px;
+    margin-bottom: 0;
+}
+
+.site-header{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background-color: #fdfdfd;
+    height: 40px;
+    top: 0;
+}
+
+.page-content{
+    padding-top: 80px;
+}
+
+
+.blog-meta{
+    font-size: 20px;
+}
+
+/*
+Inspiration for the about page from Andrej Karpathy: https://karpathy.ai/
+*/
+
+.ico {
+    grid-column: span 1;
+    vertical-align: top;
+    border-left: 2px solid #cfcfcf;
+    position: relative;
+    margin-bottom: 20px;
+}
+.ico img {
+    border-radius: 5px;
+    width: 100%;
+    max-width: 80px;
+    display: inline-block;
+}
+
+.desc {
+    grid-column: span 10;
+    vertical-align: top;
+    font-size: 14px;
+    padding-left: 70px;
+    padding-bottom: 5px;
+}
+
+.entry-dot {
+    position: absolute;
+    top: 0px;
+    left: -8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 7px;
+    background-color: #cfcfcf;
+    border: 2px solid white;
+}
+
+.timespan {
+    grid-column: span 1;
+    font-size: 14px;
+    text-align: left;
+    padding-right: 5px;
+    color: #bbb;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}

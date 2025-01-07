@@ -1,0 +1,71 @@
+---
+layout: "level"
+---
+{{content}}
+
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+
+<div class="blog-meta" id="blog-list">
+    {% assign posts_per_page = 10 %}
+    {% assign page_counter = 0 %}
+    <div class="page" style="display: block;"> 
+    {% for post in site.posts %}
+        <div class="post-item">
+            <a href="{{ post.url }}" style="color: rgb(21, 130, 239);">{{ post.title }}</a>
+            <p style="font-size: 14px; color: grey;">{{ post.date | date: date_format }} | {% include reading-time.html %}</p>
+            <p style="font-size: 16px;">{{ post.description }}</p>
+            <hr style="border: 1px solid black; margin-top: 20px; margin-bottom: 20px;">
+        </div>
+
+        {% assign page_counter = page_counter | plus: 1 %}
+        {% if page_counter == posts_per_page and forloop.last == false %}
+            </div> <!-- Close the current page -->
+            <div class="page" style="display: none;"> <!-- Start a new page -->
+            {% assign page_counter = 0 %}
+        {% endif %}
+    {% endfor %}
+    </div> <!-- Close the last page -->
+</div>
+
+<!-- Pagination Controls -->
+<div class="pagination" id="pagination-controls">
+    <button id="prev-page">Previous</button>
+    <span id="page-number"></span>
+    <button id="next-page">Next</button>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const pages = document.querySelectorAll('.page');
+        let currentPage = 0;
+
+        function showPage(page) {
+            pages.forEach((pageElement, index) => {
+                pageElement.style.display = index === page ? 'block' : 'none';
+            });
+            updatePaginationButtons();
+        }
+
+        function updatePaginationButtons() {
+            document.getElementById('prev-page').disabled = currentPage === 0;
+            document.getElementById('next-page').disabled = currentPage === pages.length - 1;
+            document.getElementById('page-number').innerText = `Page ${currentPage + 1} of ${pages.length}`;
+        }
+
+        document.getElementById('prev-page').addEventListener('click', () => {
+            if (currentPage > 0) {
+                currentPage--;
+                showPage(currentPage);
+            }
+        });
+
+        document.getElementById('next-page').addEventListener('click', () => {
+            if (currentPage < pages.length - 1) {
+                currentPage++;
+                showPage(currentPage);
+            }
+        });
+
+        showPage(currentPage);
+    });
+</script>

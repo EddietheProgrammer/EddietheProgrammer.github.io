@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Introduction"
+description: "A further, more descriptive, introduction of me as well as the purpose of this site."
+categories: rant
+---
+Hello, welcome to my first blog post for this website. I wanted to use this post to explain myself in a more storytelling way instead of summary bullet points. If you somehow found yourself here and don't want to fully read in depth about me, I can direct you to my [About]({{ site.url }}/about/) and [Resume]({{ site.url }}/resume/) sections. With that being said, I'll describe a little abuot the site itself, how I got to this point, then the purpose of this site.
+
+### **Website Development**
+This website was built in [Jekyll](https://jekyllrb.com/docs/) using the `minima` theme (I like the simplicity of it). I overrid some of CSS and manually configured some things to this website that I felt enhances your experience. One main change was a different font theme, `proxima-nova`. This theme is displayed on one of my favorite websites, [Baseball Savant](https://baseballsavant.mlb.com/), so I did a little digging to extract the theme. I personally feel it's a nice mixture of professional and creative feel. You may also be wondering how this website is hosted and deployed. For that, I used a GH Pages for convenience and affordability. All I ask is to not overload the server.
+
+### **My Inspiration**
+I was born and raised in North Carolina, where I was encouraged to explore various endeavors, particularly in sports. I didn't really enjoy any sport until I was introduced to baseball. I remember I loved the hitting aspect of it, having to use precise hand-eye coordination to put a bat on the ball effectively. Baseball was the main part of my life growing up as I didn't really have any other hobbies. I think this was what led to dissapointment during the end of my playing tenure as I didn't work hard enough to play college ball so I was forced to pivot to something else. While working various part-time jobs, I ventured in the field of Accounting to start out college. I got bored pretty fast, mainly due to the unnecessary general business courses I had to take, so I tried out some computer science courses and drew an interest to programming. I've always had good math skills so I figured I would pair the two into statistical modeling or Data Science. 
+
+That was a quick introduction of how I got to this point in my life. So where do I want to go from here? Through self-reflection of my high school playing career, I started out at the bottom. I was a backup on the junior varsity team wanting to be a starter. I worked hard in the weight room and focused on playing with confidence, which earned me a starting position on the varsity team during my junior and senior years. I drew inspiration from this experience, realizing I could apply the same dedication and mindset to other aspects of life. My goal is to have a similar journey with machine learning—continuously improving my skills and building tools that make a positive impact on people’s lives.
+
+### **Purpose**
+The purpose of this website isn't just about me bloating about myself and trying to get hired. I want this to be a learning opportunity for you. I want to be a source of knowledge and apply what I know into blog posts for you to consume. I'm not a social media user, so these blogs are a way for me to express myself. The theme of these blogs will primarily focus on sports, specifically baseball, since I enjoy baseball analytics. However, as I deepen my knowledge of neural networks, I will likely explore other fields as well. For now, it will be discussion about fun ad hoc questions in baseball and maybe a rant or two. Honestly, this may be the only post where I rant a lot.
+
+<br>
+That’s it for now. I hope everything was easy to navigate. If you have any suggestions to improve the website, feel free to leave a comment below or submit an issue on GitHub. Since commenting requires a GitHub account, you’re also welcome to reach out via email or message me on LinkedIn. I’m always open to feedback.

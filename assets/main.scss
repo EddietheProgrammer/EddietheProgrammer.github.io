@@ -15,6 +15,7 @@ body {
     }
 }
 
+
 .post-title{
     font-weight: 700;
 }
@@ -50,6 +51,14 @@ body {
     font-size: 14px;
 
 }
+
+// Extra Site stuff to fix
+.site-nav {
+    line-height: 54px;
+    display: inline-block;
+    position: relative;
+  }
+  
 
 .trigger{
     display: inline-block;

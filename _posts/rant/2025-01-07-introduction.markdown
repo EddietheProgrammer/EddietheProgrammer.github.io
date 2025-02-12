@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Introduction"
+subtitle: "Introduction"
 description: "A further, more descriptive, introduction of me as well as the purpose of this site."
 categories: rant
 ---

@@ -1,6 +1,7 @@
 ---
 layout: contact
 title: Contact
+subtitle: Contact
 permalink: /contact/
 ---
 
